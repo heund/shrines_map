@@ -1,0 +1,1346 @@
+[
+  {
+    "latitude": "33.5494717",
+    "longitude": "126.7170891",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 동복리 863",
+    "shrine_name": "동복리 본향 굴묵밧할망당"
+  },
+  {
+    "latitude": "33.5507592",
+    "longitude": "126.752818",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 김녕리 1771",
+    "shrine_name": "김녕 본향 사장빌레큰당"
+  },
+  {
+    "latitude": "33.5507592",
+    "longitude": "126.752818",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 김녕리 1771",
+    "shrine_name": "동김녕 궤눼깃당"
+  },
+  {
+    "latitude": "33.5544632469139",
+    "longitude": "126.758761317173",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 김녕리 571-2",
+    "shrine_name": "동김녕리 성세깃당"
+  },
+  {
+    "latitude": "33.5548687680039",
+    "longitude": "126.742895199401",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 김녕리 3417",
+    "shrine_name": "서김녕 본향 노모리동산 일뤠당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "서김녕리 서문하르방당"
+  },
+  {
+    "latitude": "33.5487733",
+    "longitude": "126.7930352",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 월정리 179-8",
+    "shrine_name": "월정 본향 서당머체큰당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "월정리 서당"
+  },
+  {
+    "latitude": "33.5603114929672",
+    "longitude": "126.790918369389",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 월정리 774-4",
+    "shrine_name": "월정리 베롱개 해신당"
+  },
+  {
+    "latitude": "33.5590931897547",
+    "longitude": "126.813803167503",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 행원리 573-6",
+    "shrine_name": "행원리 본향 큰당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "행원리 남당"
+  },
+  {
+    "latitude": "33.5296553",
+    "longitude": "126.819512",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 한동리 2123",
+    "shrine_name": "한동 본향 괴로본산국당"
+  },
+  {
+    "latitude": "33.5429614",
+    "longitude": "126.8287006",
+    "ownership_standardized": "국가",
+    "validated_address_ko": null,
+    "shrine_name": "한동 망애물 해신당"
+  },
+  {
+    "latitude": "33.5249880112787",
+    "longitude": "126.828446664406",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 한동리 656",
+    "shrine_name": "평대 본향 신선백관 하르방당"
+  },
+  {
+    "latitude": "33.5249880112787",
+    "longitude": "126.828446664406",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 한동리 656",
+    "shrine_name": "평대(서동) 본향수대깃당"
+  },
+  {
+    "latitude": "33.5244887046808",
+    "longitude": "126.84363465615",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 평대리 975",
+    "shrine_name": "평대(동동) 수대깃당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "평대리 갯마리 일뤠당"
+  },
+  {
+    "latitude": "33.5144228",
+    "longitude": "126.8545364",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 세화리 1049-2",
+    "shrine_name": "세화리 본향 천자또 산신당"
+  },
+  {
+    "latitude": "33.5144228",
+    "longitude": "126.8545364",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 세화리 1049-2",
+    "shrine_name": "세화리 고는곶 일뤠"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "세화리 갯것할망당"
+  },
+  {
+    "latitude": "33.5082899525198",
+    "longitude": "126.869438545972",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 상도리 202",
+    "shrine_name": "상도리 본향 막음질 일뤠할망당"
+  },
+  {
+    "latitude": "33.5234766276036",
+    "longitude": "126.876485455772",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 하도리 2884",
+    "shrine_name": "하도리 본향 삼싱불도할망당"
+  },
+  {
+    "latitude": "33.5266837931548",
+    "longitude": "126.891908356697",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 하도리 450-3",
+    "shrine_name": "하도리 각시당"
+  },
+  {
+    "latitude": "33.5258658",
+    "longitude": "126.8841999",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 하도리 1778",
+    "shrine_name": "하도리 남당"
+  },
+  {
+    "latitude": "33.5249131",
+    "longitude": "126.8656877",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 면수길 52",
+    "shrine_name": "하도리 면수동 본향 여씨불도할망당"
+  },
+  {
+    "latitude": "33.5051525459574",
+    "longitude": "126.909931711024",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 종달리 70",
+    "shrine_name": "종달 본향 오막개당"
+  },
+  {
+    "latitude": "33.5053014",
+    "longitude": "126.9100125",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 종달리 71",
+    "shrine_name": "종달리 조개왓 틀목 일뤠당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "종달리 생개납 돈짓당"
+  },
+  {
+    "latitude": "33.4672277",
+    "longitude": "126.7771789",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 송당리 산 200",
+    "shrine_name": "송당리 본향 웃손당 당오름 백주할망당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "개인",
+    "validated_address_ko": null,
+    "shrine_name": "송당리 상덕천 체오름 일뤠당"
+  },
+  {
+    "latitude": "33.4666671323766",
+    "longitude": "126.76092492817",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 송당리 산 61",
+    "shrine_name": "송당리 상덕천 체오름 산신당"
+  },
+  {
+    "latitude": "33.4903120165569",
+    "longitude": "126.793060639747",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 송당리 산 8-1",
+    "shrine_name": "송당리 본향 알손당 고부니모루 소천국 하르방당"
+  },
+  {
+    "latitude": "33.5036547442058",
+    "longitude": "126.769564346012",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 덕천리 289",
+    "shrine_name": "하덕천리 본향 거멀 문국성 산신당"
+  },
+  {
+    "latitude": "33.4980447282971",
+    "longitude": "126.765013589723",
+    "ownership_standardized": "법인",
+    "validated_address_ko": "제주특별자치도 제주시 구좌읍 덕천리 산 49-3",
+    "shrine_name": "하덕천리 웃산전 사라흘당"
+  },
+  {
+    "latitude": "33.5368659155901",
+    "longitude": "126.618395988403",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 신촌리 2257",
+    "shrine_name": "신촌리 본향 큰물머리 영등빌레당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "신촌리 일뤠당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "신촌리 동동네 일뤠낭거리 일뤠당"
+  },
+  {
+    "latitude": "33.5420751171512",
+    "longitude": "126.634562877698",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 조천리 2730-2",
+    "shrine_name": "조천리(하동) 새콧할망당 (고망할망당)"
+  },
+  {
+    "latitude": "33.5365258520654",
+    "longitude": "126.645554292782",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 조천리 695",
+    "shrine_name": "조천리 새당"
+  },
+  {
+    "latitude": "33.5488871",
+    "longitude": "126.6522151",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 신흥로2길 20-9",
+    "shrine_name": "신흥리 본향 대방황수당"
+  },
+  {
+    "latitude": "33.5487040001485",
+    "longitude": "126.649033012775",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 신흥리 545-1",
+    "shrine_name": "신흥리 볼래낭할망당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "신흥리 서카름 가문이알 김씨조상당"
+  },
+  {
+    "latitude": "33.5456753034347",
+    "longitude": "126.659862126403",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 조함해안로 428-13",
+    "shrine_name": "함덕리 본향 알카름 서물당"
+  },
+  {
+    "latitude": "33.5317399772927",
+    "longitude": "126.663046236754",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 함덕리 1698",
+    "shrine_name": "함덕리존나니모루 일뤠당"
+  },
+  {
+    "latitude": "33.5504485",
+    "longitude": "126.6766617",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 함덕리 91",
+    "shrine_name": "함덕리 머체 일뤠당"
+  },
+  {
+    "latitude": "33.5348435333578",
+    "longitude": "126.661690721091",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 함덕리 2547-1",
+    "shrine_name": "함덕리 한양할망당"
+  },
+  {
+    "latitude": "33.5432711882119",
+    "longitude": "126.659788854649",
+    "ownership_standardized": "법인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 신북로 470",
+    "shrine_name": "함덕리 지르 일뤠당"
+  },
+  {
+    "latitude": "33.5432611",
+    "longitude": "126.6575661",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 함대로 6",
+    "shrine_name": "함덕리 서모오름 산신당"
+  },
+  {
+    "latitude": "33.5445344950302",
+    "longitude": "126.676507251879",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 함덕리 178-1",
+    "shrine_name": "함덕리 문두낭당"
+  },
+  {
+    "latitude": "33.5508557002035",
+    "longitude": "126.693139788062",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 북촌7길 35",
+    "shrine_name": "북촌리(뒷개) 본향 가릿당"
+  },
+  {
+    "latitude": "33.5430978",
+    "longitude": "126.6935863",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 북촌리 1148",
+    "shrine_name": "북촌리 당구들동산 당팟당"
+  },
+  {
+    "latitude": "33.5471431364891",
+    "longitude": "126.691765528086",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 북촌리 2688",
+    "shrine_name": "북촌리동카름 칠머리당"
+  },
+  {
+    "latitude": "33.5196927597789",
+    "longitude": "126.695124318335",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 선흘리 2661",
+    "shrine_name": "선흘리 (알선흘) 본향 당동산 산신당"
+  },
+  {
+    "latitude": "33.5021471",
+    "longitude": "126.716843",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 선흘리 261",
+    "shrine_name": "선흘리 (웃선흘) 탈남밧 일뤠당"
+  },
+  {
+    "latitude": "33.5023167",
+    "longitude": "126.6390196",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와흘리 1274-1",
+    "shrine_name": "와흘리 본향 한거리 하로산당"
+  },
+  {
+    "latitude": "33.4812527",
+    "longitude": "126.6559656",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와흘리 11",
+    "shrine_name": "와흘리 고평동 본향 궷드르 산신당"
+  },
+  {
+    "latitude": "33.5005347858412",
+    "longitude": "126.65542074542",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 대흘리 2201",
+    "shrine_name": "대흘리 본향 비지남밧 하로산당"
+  },
+  {
+    "latitude": "33.4911011101121",
+    "longitude": "126.686213073355",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와산리 694-1",
+    "shrine_name": "와산리 하르방당 베락당"
+  },
+  {
+    "latitude": "33.4805780472159",
+    "longitude": "126.687595055516",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와산리 489-2",
+    "shrine_name": "와산리 본향 당오름 불돗당"
+  },
+  {
+    "latitude": "33.490686300134",
+    "longitude": "126.691462003882",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와산리 145",
+    "shrine_name": "와산리 당새미 토광물 산신당"
+  },
+  {
+    "latitude": "33.486544467879",
+    "longitude": "126.677313512838",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와산리 1471",
+    "shrine_name": "와산리 엄낭굴 철산이도 산신당"
+  },
+  {
+    "latitude": "33.4884682490856",
+    "longitude": "126.683974986604",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와산리 573",
+    "shrine_name": "와산리 골왓술 산신당"
+  },
+  {
+    "latitude": "33.4850028179521",
+    "longitude": "126.690389613571",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 와산리 195",
+    "shrine_name": "와산리 웃질왓 감낭밧 한씨조상당"
+  },
+  {
+    "latitude": "33.4425983749254",
+    "longitude": "126.679110990341",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 교래리 401",
+    "shrine_name": "교래리 본향 리하로산당"
+  },
+  {
+    "latitude": "33.433547475595",
+    "longitude": "126.6747769296",
+    "ownership_standardized": "법인",
+    "validated_address_ko": "제주특별자치도 제주시 조천읍 비자림로 606",
+    "shrine_name": "교래리 누룩남도 일뤠당"
+  },
+  {
+    "latitude": "33.4282556649651",
+    "longitude": "126.309996894628",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 봉성리 3683",
+    "shrine_name": "봉성리 본향 구머리 송씨할망당"
+  },
+  {
+    "latitude": "33.4396063508433",
+    "longitude": "126.331771328143",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 납읍리 1721",
+    "shrine_name": "납읍리 본향 바구사니우영 돗당"
+  },
+  {
+    "latitude": "33.3727616",
+    "longitude": "126.3846313",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 어음리 산 20",
+    "shrine_name": "납읍리 홍골당"
+  },
+  {
+    "latitude": "33.41965358394",
+    "longitude": "126.332569407188",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 어음리 3708-2",
+    "shrine_name": "어음1리 본향 개나ᄆᆞ들비멘잇당"
+  },
+  {
+    "latitude": "33.4006736225491",
+    "longitude": "126.337400951897",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 어음리 3063-1",
+    "shrine_name": "어음2리 본향 몽둥이왓 돔배물 축일당"
+  },
+  {
+    "latitude": "33.4082699113001",
+    "longitude": "126.331902473503",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 어음리 3379-3",
+    "shrine_name": "어음1 리 본향 상메초왓 송씨할망당"
+  },
+  {
+    "latitude": "33.4418639416254",
+    "longitude": "126.37930876263",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 장전리 1636-2",
+    "shrine_name": "소길리 당팟 일뤠할망당"
+  },
+  {
+    "latitude": "33.4835764408103",
+    "longitude": "126.410448171275",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 하귀1리 628",
+    "shrine_name": "하귀1 리( 동귀) 본향 제신당"
+  },
+  {
+    "latitude": "33.4859229",
+    "longitude": "126.4084946",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 하귀1리 1622",
+    "shrine_name": "하귀1 리 해신당"
+  },
+  {
+    "latitude": "33.4724583",
+    "longitude": "126.3577365",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 고내리 11-1",
+    "shrine_name": "고내리 본향 큰당"
+  },
+  {
+    "latitude": "33.472735",
+    "longitude": "126.3505204",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 고내리 81",
+    "shrine_name": "고내리 오름허릿당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "고내리 남당"
+  },
+  {
+    "latitude": "33.4539566664486",
+    "longitude": "126.351779023111",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 하가리 846-1",
+    "shrine_name": "상․ 하가리 본향 오당빌레 할망당"
+  },
+  {
+    "latitude": "33.4551879",
+    "longitude": "126.3431048",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 고내리 산 13-1",
+    "shrine_name": "상가리 큰신머들 새당하르방당"
+  },
+  {
+    "latitude": "33.4790176",
+    "longitude": "126.3976001",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 하귀2리 2416-1",
+    "shrine_name": "하귀리 본향 돌코릿당"
+  },
+  {
+    "latitude": "33.4866720098543",
+    "longitude": "126.392115681934",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 가문동길 47",
+    "shrine_name": "하귀리 해신당"
+  },
+  {
+    "latitude": "33.4164563",
+    "longitude": "126.4122987",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 유수암리 191",
+    "shrine_name": "상귀리 본향 황다리궤당"
+  },
+  {
+    "latitude": "33.4752683509324",
+    "longitude": "126.36603297428",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 신엄리 2672-3",
+    "shrine_name": "신엄리 본향 당빌레왓 송씨할망당"
+  },
+  {
+    "latitude": "33.4772899513762",
+    "longitude": "126.378291001645",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 구엄동1길 28",
+    "shrine_name": "구엄리 본향 모감빌레 송씨할망당"
+  },
+  {
+    "latitude": "33.4681218",
+    "longitude": "126.3841023",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 수산리 1778-1",
+    "shrine_name": "수산리 본향 당팟 서목당"
+  },
+  {
+    "latitude": "33.4626494287843",
+    "longitude": "126.36597263987",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 용흥4길 9",
+    "shrine_name": "용흥리 본향 진빌레 일뤠당"
+  },
+  {
+    "latitude": "33.4507837937137",
+    "longitude": "126.305537194637",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 곽지리 1565",
+    "shrine_name": "금성리 축일할망당"
+  },
+  {
+    "latitude": "33.446834240211",
+    "longitude": "126.300440799048",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 금성리 499",
+    "shrine_name": "금성리 본향 개똥밧당"
+  },
+  {
+    "latitude": "33.4483250947152",
+    "longitude": "126.315021797852",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 곽지리 1026",
+    "shrine_name": "곽지리 송씨 일뤠할망당"
+  },
+  {
+    "latitude": "33.4627267934974",
+    "longitude": "126.323700140621",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 애월리 556",
+    "shrine_name": "애월리 굽은돌알 개당"
+  },
+  {
+    "latitude": "33.4567812",
+    "longitude": "126.3320372",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 애월리 181",
+    "shrine_name": "애월리 해신당"
+  },
+  {
+    "latitude": "33.4497468580879",
+    "longitude": "126.391943423276",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 장전리 402",
+    "shrine_name": "장전리 본향 능선이 고지물 일뤠할망당"
+  },
+  {
+    "latitude": "33.4628239165516",
+    "longitude": "126.36852223618",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 신엄리 3208",
+    "shrine_name": "중엄리 본향 송씨일뤠당"
+  },
+  {
+    "latitude": "33.4653496268836",
+    "longitude": "126.423849037806",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 광령리 3808-2",
+    "shrine_name": "고성리 동구시물 마께왓당"
+  },
+  {
+    "latitude": "33.4525594312478",
+    "longitude": "126.421713145628",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 광령리 4035-4",
+    "shrine_name": "고성리 장털 일뤠당"
+  },
+  {
+    "latitude": "33.4614836494417",
+    "longitude": "126.44617515347",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 광령리 36-6",
+    "shrine_name": "광령1 리 본향 자운당"
+  },
+  {
+    "latitude": "33.4580344239222",
+    "longitude": "126.433661953799",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 광령리 2367",
+    "shrine_name": "광령2리 이숭굴 하르방당"
+  },
+  {
+    "latitude": "33.4485644435154",
+    "longitude": "126.432754692077",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 광령리 2524",
+    "shrine_name": "광령2리 이숭굴 할망당"
+  },
+  {
+    "latitude": "33.4613568731385",
+    "longitude": "126.426481683211",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 광령리 3356",
+    "shrine_name": "광령3리 중굴당"
+  },
+  {
+    "latitude": "33.4152359354325",
+    "longitude": "126.449000864589",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 광령리 596",
+    "shrine_name": "광령리 마씨 미륵당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "금덕리 당오름밧 하르방당"
+  },
+  {
+    "latitude": "33.4280623",
+    "longitude": "126.3991953",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 유수암리 1456",
+    "shrine_name": "금덕리 남당밧 할망당"
+  },
+  {
+    "latitude": "33.4164563",
+    "longitude": "126.4122987",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 애월읍 유수암리 191",
+    "shrine_name": "유수암 본향 당아진밧 송씨할망당"
+  },
+  {
+    "latitude": "33.386681304983",
+    "longitude": "126.223492665212",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 금능리 1631",
+    "shrine_name": "금릉 본향 소왕물 술일할망당"
+  },
+  {
+    "latitude": "33.386681304983",
+    "longitude": "126.223492665212",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 금능리 1631",
+    "shrine_name": "금릉 본향 연딧가름 영감당"
+  },
+  {
+    "latitude": "33.3960341",
+    "longitude": "126.2451461",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 협재리 1844-1",
+    "shrine_name": "협재 본향 웃가름 축일당"
+  },
+  {
+    "latitude": "33.3990542461283",
+    "longitude": "126.244259074561",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 협재리 1458",
+    "shrine_name": "협재리 뒷당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "한수리 본향 개당"
+  },
+  {
+    "latitude": "33.4235244",
+    "longitude": "126.2608093",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 한수리 914-1",
+    "shrine_name": "한수리 대섬밧 하르방당"
+  },
+  {
+    "latitude": "33.4430623",
+    "longitude": "126.2912451",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 귀덕리 1031",
+    "shrine_name": "귀덕 본향 축일할망당"
+  },
+  {
+    "latitude": "33.3621727789643",
+    "longitude": "126.271175026356",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 상명리 898",
+    "shrine_name": "상명리 본향 느지리 케인틈 축일할망당"
+  },
+  {
+    "latitude": "33.4062615463639",
+    "longitude": "126.282701330126",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 상대리 4132-3",
+    "shrine_name": "상대리 본향 고한이 축일당"
+  },
+  {
+    "latitude": "33.3887175",
+    "longitude": "126.2692397",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 동명리 1109",
+    "shrine_name": "명월 본향 백문이옥 하원당"
+  },
+  {
+    "latitude": "33.3829402442485",
+    "longitude": "126.275219195496",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 명월리 2223",
+    "shrine_name": "명월 박닛물 축일당"
+  },
+  {
+    "latitude": "33.3991178110507",
+    "longitude": "126.259406965144",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 옹포리 828-1",
+    "shrine_name": "명월 본향 서문하르방당"
+  },
+  {
+    "latitude": "33.3985282748603",
+    "longitude": "126.257252108689",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 월계로 74",
+    "shrine_name": "명월 본향 여드레할망당"
+  },
+  {
+    "latitude": "33.3991755550883",
+    "longitude": "126.273444589119",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 동명리 751",
+    "shrine_name": "동명리 일뤠당"
+  },
+  {
+    "latitude": "33.3923098528958",
+    "longitude": "126.272475391277",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 동명리 958",
+    "shrine_name": "동명리 술일할망당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "금악리 아미당"
+  },
+  {
+    "latitude": "33.3457058975397",
+    "longitude": "126.30326124779",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 금악리 1359",
+    "shrine_name": "금악 본향 신모들 축일할망당"
+  },
+  {
+    "latitude": "33.3543665",
+    "longitude": "126.3291196",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 금악리 161",
+    "shrine_name": "금악 본향 당동산 오일하르방당"
+  },
+  {
+    "latitude": "33.3824987",
+    "longitude": "126.2372933",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한림읍 협재리 산 150-11",
+    "shrine_name": "비양리 본향 술일당"
+  },
+  {
+    "latitude": "33.3087086373033",
+    "longitude": "126.176924715264",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 고산리 2640",
+    "shrine_name": "고산리 본향 당오름 당목잇당"
+  },
+  {
+    "latitude": "33.3005832",
+    "longitude": "126.1973333",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 고산리 361-2",
+    "shrine_name": "고산리 자구내 갯그리 할망당"
+  },
+  {
+    "latitude": "33.3309406268931",
+    "longitude": "126.174812087798",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 용수리 1546",
+    "shrine_name": "용수리 본향 골새왓 축일할망당"
+  },
+  {
+    "latitude": "33.3242436000915",
+    "longitude": "126.166036676207",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 용수리 4136-3",
+    "shrine_name": "용수리 펄낭 해신당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "두모․ 신창 본향 거머들 축일당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "두모리 해신당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "신창리 돈짓당"
+  },
+  {
+    "latitude": "33.3514293668174",
+    "longitude": "126.195839061172",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 금등리 1008",
+    "shrine_name": "금등리 본향 손드물 축일할망당"
+  },
+  {
+    "latitude": "33.3596445108772",
+    "longitude": "126.204958161338",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 판포리 2532-1",
+    "shrine_name": "판포리 본향 오일하르방당"
+  },
+  {
+    "latitude": "33.3316765305436",
+    "longitude": "126.230343813624",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 조수리 248-1",
+    "shrine_name": "조수리 본향 삼대바지 매와지 축일할망당"
+  },
+  {
+    "latitude": "33.3289008304889",
+    "longitude": "126.226504762999",
+    "ownership_standardized": "법인",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 낙천리 1883",
+    "shrine_name": "낙천리 본향 소록낭들 오일하르방당"
+  },
+  {
+    "latitude": "33.3356319",
+    "longitude": "126.2490842",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 저지리 1892-3",
+    "shrine_name": "저지리 본향 당멀 허릿당"
+  },
+  {
+    "latitude": "33.3234273",
+    "longitude": "126.2186697",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 조수리 2406",
+    "shrine_name": "저지리 용선리 일뤠하르방당"
+  },
+  {
+    "latitude": "33.33975830000001",
+    "longitude": "126.2402253",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 한경면 용금로 583-12",
+    "shrine_name": "조수 종애물 본향 당밧 여드레할망당"
+  },
+  {
+    "latitude": "33.5081637",
+    "longitude": "126.5150147",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 용담로20길 11",
+    "shrine_name": "용담2동 한두기 본향 시락당"
+  },
+  {
+    "latitude": "33.5143007",
+    "longitude": "126.5093714",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 용담로 65",
+    "shrine_name": "용담3동 다끄내 본향궁당"
+  },
+  {
+    "latitude": "33.5202756",
+    "longitude": "126.4943374",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 용담삼동 2292-29",
+    "shrine_name": "용담3동 어영연딧당"
+  },
+  {
+    "latitude": "33.51782070000001",
+    "longitude": "126.5003523",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 서해안로 587",
+    "shrine_name": "용담3동 다끄내 해신당"
+  },
+  {
+    "latitude": "33.506555",
+    "longitude": "126.4683257",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 도두일동 1745",
+    "shrine_name": "도두1 동 본향 오름허릿당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "도두2동 본향 진불래원 왕돌앞당"
+  },
+  {
+    "latitude": "33.5094428",
+    "longitude": "126.4795955",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 도두이동 836-9",
+    "shrine_name": "신사수동 본향 랭이물당"
+  },
+  {
+    "latitude": "33.5034782",
+    "longitude": "126.461139",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 이호일동 331",
+    "shrine_name": "이호1 동 본향 붉은왕돌 할망당"
+  },
+  {
+    "latitude": "33.494586",
+    "longitude": "126.4477749",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 일주서로 7499",
+    "shrine_name": "이호2동 본향 남당"
+  },
+  {
+    "latitude": "33.4949877",
+    "longitude": "126.4684013",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 이호이동 1-4",
+    "shrine_name": "이호2동 본향 소왕상시당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "국가",
+    "validated_address_ko": null,
+    "shrine_name": "내도동 본향 웃당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "국가",
+    "validated_address_ko": null,
+    "shrine_name": "내도동 알당"
+  },
+  {
+    "latitude": "33.495124",
+    "longitude": "126.4394966",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 내도동 604-1",
+    "shrine_name": "내도동 당팟 할망당"
+  },
+  {
+    "latitude": "33.4886599",
+    "longitude": "126.4276141",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 우령8길 27",
+    "shrine_name": "외도1 동 본향 우렝이 돗당"
+  },
+  {
+    "latitude": "33.4903776",
+    "longitude": "126.4531119",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 이호이동 1312",
+    "shrine_name": "도평동 본향 대통밧당"
+  },
+  {
+    "latitude": "33.4903776",
+    "longitude": "126.4531119",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 이호이동 1312",
+    "shrine_name": "광평동 본향 당팟 세경할망당"
+  },
+  {
+    "latitude": "33.4642333",
+    "longitude": "126.4723448",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 노형동 1906",
+    "shrine_name": "해안동 본향 절물동산 하르방당"
+  },
+  {
+    "latitude": "33.4581841",
+    "longitude": "126.4514216",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 해안동 2431",
+    "shrine_name": "해안동 본향 독승굴 일뤠할망당"
+  },
+  {
+    "latitude": "33.4912212",
+    "longitude": "126.4814028",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 연동 1955-5",
+    "shrine_name": "연동 본향 다랑굿 막개낭당"
+  },
+  {
+    "latitude": "33.4748126",
+    "longitude": "126.4956948",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 연동 산 28",
+    "shrine_name": "연동 본향 능당"
+  },
+  {
+    "latitude": "33.4968326",
+    "longitude": "126.5113078",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 오라이동 1186-2",
+    "shrine_name": "오라동 본향 방애왓 내왓당"
+  },
+  {
+    "latitude": "33.4680967",
+    "longitude": "126.5126519",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 오라이동 61-32",
+    "shrine_name": "오라동 정실 (도노미) 본향"
+  },
+  {
+    "latitude": "33.465667",
+    "longitude": "126.5280789",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 오등동 750",
+    "shrine_name": "오등동 본향 오드싱당"
+  },
+  {
+    "latitude": "33.46477100000001",
+    "longitude": "126.532362",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 오등동 799",
+    "shrine_name": "오등동 병다동 본향 다싯당"
+  },
+  {
+    "latitude": "33.455778",
+    "longitude": "126.5381972",
+    "ownership_standardized": "법인",
+    "validated_address_ko": "제주특별자치도 제주시 오등동 305-1",
+    "shrine_name": "오등동 죽성 본향 설새밋당"
+  },
+  {
+    "latitude": "33.5011072",
+    "longitude": "126.5559742",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 화북이동 5328",
+    "shrine_name": "아라동 본향 간드락 할망당"
+  },
+  {
+    "latitude": "33.5015477",
+    "longitude": "126.5558887",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 장수물길 58-9",
+    "shrine_name": "아라동 본향 간드락 하르방당"
+  },
+  {
+    "latitude": "33.4871593",
+    "longitude": "126.5231602",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 도남동 586",
+    "shrine_name": "도남동 본향 백질당"
+  },
+  {
+    "latitude": "33.5189474",
+    "longitude": "126.5487564",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 건입동 387-12",
+    "shrine_name": "건입동 본향 산지 칠머리당"
+  },
+  {
+    "latitude": "33.5213774",
+    "longitude": "126.571556",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 화북일동 1392",
+    "shrine_name": "화북1 동 윤동지영감당"
+  },
+  {
+    "latitude": "33.507826",
+    "longitude": "126.5640243",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 화북이동 3429",
+    "shrine_name": "화북동 본향 가릿당"
+  },
+  {
+    "latitude": "33.5180364",
+    "longitude": "126.6082155",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 삼양일동 1",
+    "shrine_name": "삼양1 동 본향 물머리엉덕웃박 감낭하르방․ 할망당"
+  },
+  {
+    "latitude": "33.5243633",
+    "longitude": "126.5849631",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 삼양이동 2104-4",
+    "shrine_name": "삼양2동 본향 당팟할망당"
+  },
+  {
+    "latitude": "33.5054323",
+    "longitude": "126.5888876",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 도련일동 1529",
+    "shrine_name": "도련1 동 본향 당팟 개당"
+  },
+  {
+    "latitude": "33.4903712",
+    "longitude": "126.5960882",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 봉개북1길 5-9",
+    "shrine_name": "봉개 본향 뒷술당"
+  },
+  {
+    "latitude": "33.5076952",
+    "longitude": "126.6155703",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 회천동 1058",
+    "shrine_name": "봉개동 동회천 본향 새미 하로산당"
+  },
+  {
+    "latitude": "33.4975619",
+    "longitude": "126.6100944",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 회천동 2108",
+    "shrine_name": "봉개 서회천 본향 는새 남선밧당"
+  },
+  {
+    "latitude": "33.4612315",
+    "longitude": "126.5550836",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 아라일동 314",
+    "shrine_name": "영평하동 본향 신당루당"
+  },
+  {
+    "latitude": "33.4647583",
+    "longitude": "126.5946677",
+    "ownership_standardized": "국가",
+    "validated_address_ko": "제주특별자치도 제주시 용강동 255",
+    "shrine_name": "용강 본향 궤당"
+  },
+  {
+    "latitude": "33.4540099",
+    "longitude": "126.5875893",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 월평동 1",
+    "shrine_name": "월평 본향 다라쿳당"
+  },
+  {
+    "latitude": "33.4930179",
+    "longitude": "126.9516341",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 우도면 연평리 1737-13",
+    "shrine_name": "천진동 하느리 돈짓당"
+  },
+  {
+    "latitude": "33.4984548215181",
+    "longitude": "126.945515484743",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 우도면 연평리 2594",
+    "shrine_name": "서천진동 본향 당동산 종달잇당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "영일동 돈짓당"
+  },
+  {
+    "latitude": "33.5139013947132",
+    "longitude": "126.967080443021",
+    "ownership_standardized": "공동",
+    "validated_address_ko": "제주특별자치도 제주시 우도면 연평리 16",
+    "shrine_name": "비양동(비양) 돈짓당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "상․ 하고수동 성창봉오지돈짓당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "전흘동 본향 뜬동산 목지당"
+  },
+  {
+    "latitude": "33.5165623",
+    "longitude": "126.9490715",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 우도면 연평리 968-1",
+    "shrine_name": "주흥동 중개 돈짓당"
+  },
+  {
+    "latitude": "33.5102732906382",
+    "longitude": "126.943455267183",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 우도면 연평리 2391-2",
+    "shrine_name": "하우목동 본향 목지당"
+  },
+  {
+    "latitude": "33.5102732906382",
+    "longitude": "126.943455267183",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 우도면 연평리 2391-2",
+    "shrine_name": "하우목동 돈짓당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "대서리 장군당"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "대서리 당너머 고삿바위"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "영흥리 뒷산 절기미 산신당"
+  },
+  {
+    "latitude": "33.9447755113888",
+    "longitude": "126.312283029916",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 추자면 추자로 376-3",
+    "shrine_name": "묵리 당목치동산 처녀당"
+  },
+  {
+    "latitude": "33.9547847906658",
+    "longitude": "126.34067882343",
+    "ownership_standardized": "미상",
+    "validated_address_ko": "제주특별자치도 제주시 추자면 예초리 산 7",
+    "shrine_name": "예초리 당목쟁이 물생이끝당"
+  },
+  {
+    "latitude": "33.9523194751318",
+    "longitude": "126.32925901804",
+    "ownership_standardized": "개인",
+    "validated_address_ko": "제주특별자치도 제주시 추자면 예초리 산 52",
+    "shrine_name": "예초리 엄바위 장승"
+  },
+  {
+    "latitude": null,
+    "longitude": null,
+    "ownership_standardized": "미상",
+    "validated_address_ko": null,
+    "shrine_name": "횡간도 마을 성황당"
+  }
+]
