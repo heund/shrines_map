@@ -1,0 +1,62 @@
+{
+  "first_pass": {
+    "geocoder": "Photon",
+    "total_rows": 192,
+    "status_counts": {
+      "resolved": 14,
+      "partial": 1,
+      "unresolved": 177
+    },
+    "address_presence": {
+      "null_raw_address_count": 26,
+      "non_null_combined_count": 166,
+      "resolved_with_combined_count": 14,
+      "partial_with_combined_count": 1,
+      "unresolved_with_combined_count": 151
+    }
+  },
+  "second_pass": {
+    "geocoder": "Kakao Local API",
+    "total_rows": 192,
+    "status_counts": {
+      "resolved": 86,
+      "partial": 1,
+      "unresolved": 105
+    },
+    "address_presence": {
+      "null_raw_address_count": 26,
+      "non_null_combined_count": 166,
+      "resolved_with_combined_count": 86,
+      "partial_with_combined_count": 1,
+      "unresolved_with_combined_count": 79
+    }
+  },
+  "third_pass": {
+    "geocoder": "Kakao Local API + Google Geocoding API fallback",
+    "total_rows": 192,
+    "status_counts": {
+      "resolved": 165,
+      "partial": 1,
+      "unresolved": 26
+    },
+    "address_presence": {
+      "null_raw_address_count": 26,
+      "non_null_combined_count": 166,
+      "resolved_with_combined_count": 165,
+      "partial_with_combined_count": 1,
+      "unresolved_with_combined_count": 0
+    }
+  },
+  "delta": {
+    "resolved_change": 72,
+    "partial_change": 0,
+    "unresolved_change": -72,
+    "unresolved_with_combined_change": -72
+  },
+  "delta_second_to_third": {
+    "resolved_change": 79,
+    "partial_change": 0,
+    "unresolved_change": -79,
+    "unresolved_with_combined_change": -79
+  }
+}
