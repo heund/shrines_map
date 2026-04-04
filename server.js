@@ -19,6 +19,7 @@ const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 const MAP_PASSWORD = process.env.MAP_LOGIN_PASSWORD;
 const SESSION_SECRET = process.env.SESSION_SECRET;
 const LOGIN_PATH = path.join(__dirname, "public", "login.html");
+const VENUE_ROUTE_PATH = path.join(__dirname, "locations", "venue-route.json");
 
 if (!GOOGLE_MAPS_API_KEY) {
   throw new Error("Missing required environment variable: GOOGLE_MAPS_API_KEY");
@@ -94,6 +95,11 @@ function handleMap(_req, res) {
   res.type("html").send(renderIndexHtml(GOOGLE_MAPS_API_KEY));
 }
 
+function handleVenueRoute(_req, res) {
+  setNoStore(res);
+  return res.sendFile(VENUE_ROUTE_PATH);
+}
+
 app.get("/health", handleHealth);
 app.get("/api/health", handleHealth);
 
@@ -114,6 +120,7 @@ app.get("/", requireAuth, handleMap);
 
 app.get("/index.html", requireAuth, handleMap);
 app.get("/api/map", requireAuth, handleMap);
+app.get("/locations/venue-route.json", requireAuth, handleVenueRoute);
 
 app.listen(PORT, () => {
   console.log(`Shrines map server listening on port ${PORT}`);
