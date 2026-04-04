@@ -5,7 +5,7 @@
 This project now runs through a small Node.js server that:
 
 - shows a password login page at `/login`
-- creates an authenticated session cookie after successful sign-in
+- creates a signed authenticated cookie after successful sign-in
 - serves the existing root `index.html` only to signed-in users
 - injects `GOOGLE_MAPS_API_KEY` into the page at request time so the browser key is not hardcoded into the committed HTML
 
@@ -73,6 +73,6 @@ The built-in health check path is:
 
 ## Current limitation
 
-This first pass uses the default in-memory session store from `express-session`.
+This is still a shared-password gate, not a full user account system.
 
-That is fine for a simple private deployment, but if you later run multiple instances or want persistent session storage across restarts, we should move sessions to Redis or another shared store.
+If you later want per-user accounts, revocable sessions, or audit history, we should move auth to a dedicated identity provider or backend store.

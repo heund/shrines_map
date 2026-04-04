@@ -2,9 +2,14 @@ const path = require("path");
 
 const dotenv = require("dotenv");
 const express = require("express");
-const session = require("express-session");
 
 const { renderIndexHtml } = require("./lib/render-index-html");
+const {
+  buildClearSessionCookie,
+  buildSessionCookie,
+  createSessionToken,
+  readSession
+} = require("./lib/vercel-auth");
 
 dotenv.config();
 
@@ -14,7 +19,6 @@ const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 const MAP_PASSWORD = process.env.MAP_LOGIN_PASSWORD;
 const SESSION_SECRET = process.env.SESSION_SECRET;
 const LOGIN_PATH = path.join(__dirname, "public", "login.html");
-const SESSION_COOKIE_NAME = "shrines_map_session";
 
 if (!GOOGLE_MAPS_API_KEY) {
   throw new Error("Missing required environment variable: GOOGLE_MAPS_API_KEY");
@@ -39,28 +43,13 @@ app.use((req, res, next) => {
 });
 
 app.use(express.urlencoded({ extended: false }));
-app.use(
-  session({
-    name: SESSION_COOKIE_NAME,
-    secret: SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    rolling: true,
-    cookie: {
-      httpOnly: true,
-      sameSite: "lax",
-      secure: process.env.NODE_ENV === "production",
-      maxAge: 1000 * 60 * 60 * 12
-    }
-  })
-);
 
-function isAuthenticated(req) {
-  return req.session && req.session.isAuthenticated === true;
+async function isAuthenticated(req) {
+  return Boolean(await readSession(req));
 }
 
-function requireAuth(req, res, next) {
-  if (isAuthenticated(req)) {
+async function requireAuth(req, res, next) {
+  if (await isAuthenticated(req)) {
     return next();
   }
   return res.redirect("/login");
@@ -74,8 +63,8 @@ function handleHealth(_req, res) {
   res.json({ ok: true });
 }
 
-function handleLoginPage(req, res) {
-  if (isAuthenticated(req)) {
+async function handleLoginPage(req, res) {
+  if (await isAuthenticated(req)) {
     return res.redirect("/");
   }
 
@@ -83,31 +72,21 @@ function handleLoginPage(req, res) {
   return res.sendFile(LOGIN_PATH);
 }
 
-function handleLogin(req, res) {
+async function handleLogin(req, res) {
   const password = String(req.body.password || "");
 
   if (password !== MAP_PASSWORD) {
     return res.redirect("/login?error=1");
   }
 
-  req.session.isAuthenticated = true;
-  return req.session.save((error) => {
-    if (error) {
-      return res.status(500).send("Failed to create session.");
-    }
-    return res.redirect("/");
-  });
+  const token = await createSessionToken();
+  res.setHeader("Set-Cookie", buildSessionCookie(token));
+  return res.redirect("/");
 }
 
 function handleLogout(req, res) {
-  req.session.destroy((error) => {
-    if (error) {
-      return res.status(500).send("Failed to clear session.");
-    }
-
-    res.clearCookie(SESSION_COOKIE_NAME);
-    return res.redirect("/login");
-  });
+  res.setHeader("Set-Cookie", buildClearSessionCookie());
+  return res.redirect("/login");
 }
 
 function handleMap(_req, res) {
