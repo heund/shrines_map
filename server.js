@@ -9,7 +9,7 @@ const {
   buildSessionCookie,
   createSessionToken,
   readSession
-} = require("./lib/vercel-auth");
+} = require("./lib/session-auth");
 
 dotenv.config();
 
@@ -101,25 +101,20 @@ function handleVenueRoute(_req, res) {
 }
 
 app.get("/health", handleHealth);
-app.get("/api/health", handleHealth);
 
 app.get("/favicon.ico", (_req, res) => {
   res.status(204).end();
 });
 
 app.get("/login", handleLoginPage);
-app.get("/api/login-page", handleLoginPage);
 
 app.post("/login", handleLogin);
-app.post("/api/login", handleLogin);
 
 app.post("/logout", requireAuth, handleLogout);
-app.all("/api/logout", requireAuth, handleLogout);
 
 app.get("/", requireAuth, handleMap);
 
 app.get("/index.html", requireAuth, handleMap);
-app.get("/api/map", requireAuth, handleMap);
 app.get("/locations/venue-route.json", requireAuth, handleVenueRoute);
 
 app.listen(PORT, () => {
