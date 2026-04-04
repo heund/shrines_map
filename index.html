@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>제주비엔날레 장소 지도</title>
+  <title>제5회 제주비엔날레 QR코드 매핑 전략 자료</title>
   <style>
     :root {
       --bg: #efe7d7;
@@ -89,6 +89,62 @@
       padding: 7px 12px;
       font-size: 0.84rem;
       font-weight: 700;
+    }
+
+    .quick-filters {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .quick-filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .quick-filter-group + .quick-filter-group {
+      margin-left: 16px;
+    }
+
+    .quick-filter {
+      border: 1px solid rgba(43, 32, 20, 0.08);
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .quick-filter.is-active {
+      color: white;
+    }
+
+    .quick-filter.filter-google.is-active {
+      background: #3f4752;
+      border-color: rgba(63, 71, 82, 0.42);
+    }
+
+    .quick-filter.filter-venues.is-active {
+      background: var(--venue);
+      color: #221b16;
+      border-color: rgba(255, 214, 10, 0.5);
+    }
+
+    .quick-filter.filter-shrines.is-active {
+      background: #cc6b2c;
+      border-color: rgba(204, 107, 44, 0.45);
+    }
+
+    .quick-filter.filter-heritage.is-active {
+      background: #7b5c3d;
+      border-color: rgba(123, 92, 61, 0.45);
     }
 
     .toggle-button {
@@ -225,6 +281,26 @@
       accent-color: var(--accent);
     }
 
+    .route-toggle-button {
+      border: 1px solid rgba(214, 40, 40, 0.18);
+      background: rgba(214, 40, 40, 0.08);
+      color: #8a1c1c;
+      border-radius: 12px;
+      padding: 12px 14px;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .route-toggle-button.is-active {
+      background: #d62828;
+      border-color: rgba(214, 40, 40, 0.48);
+      color: white;
+    }
+
     .check-row {
       display: grid;
       grid-template-columns: 18px 14px 1fr auto;
@@ -279,6 +355,27 @@
       background: rgba(255, 245, 196, 0.95);
     }
 
+    .maptype-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .maptype-row {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 4px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .maptype-row input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
     details.meta-list {
       border: 1px dashed rgba(43, 32, 20, 0.12);
       border-radius: 12px;
@@ -325,7 +422,7 @@
 
     .map-floating {
       position: absolute;
-      right: 16px;
+      left: 16px;
       bottom: 16px;
       display: grid;
       gap: 10px;
@@ -490,10 +587,20 @@
   <div class="shell">
     <header class="header">
       <div class="header-title">
-        <h1>제주비엔날레 장소 지도</h1>
-        <p>문화유산, 비엔날레 장소, 신당 레이어를 한 화면에서 비교합니다.</p>
+        <h1>제5회 제주비엔날레 QR코드 매핑 전략 자료</h1>
+        <p>제공 SKOR Lab 김희은</p>
       </div>
       <div class="header-meta">
+        <div class="quick-filters">
+          <div class="quick-filter-group">
+            <button class="quick-filter filter-google" id="toggleGooglePoiButton" type="button">지도 랜드마크</button>
+          </div>
+          <div class="quick-filter-group">
+            <button class="quick-filter filter-venues" id="showVenuesOnlyButton" type="button">비엔날레 베뉴</button>
+            <button class="quick-filter filter-shrines" id="showShrinesOnlyButton" type="button">신당</button>
+            <button class="quick-filter filter-heritage" id="showHeritageOnlyButton" type="button">문화유산</button>
+          </div>
+        </div>
         <span class="pill" id="header-counts">레이어 로딩 중</span>
         <button class="toggle-button" id="sidebarToggle" type="button">필터</button>
       </div>
@@ -503,14 +610,41 @@
       <aside class="sidebar" id="sidebar">
         <div class="sidebar-head">
           <h2>레이어 제어</h2>
-          <p>문화유산은 지정 유형별 색으로 구분하고, 신당은 소유권 기준으로 분류합니다. 좌표가 없는 신당 27건은 목록에서만 집계하고 지도에는 표시하지 않습니다.</p>
+          <p>비엔날레 베뉴, 신당, 문화유산 레이어를 한 화면에서 비교합니다.</p>
         </div>
         <div class="sidebar-scroll">
+          <details class="section" open id="basemapSection">
+            <summary>
+              <div class="summary-left">
+                <span class="summary-dot" style="background:#3f4752;"></span>
+                <span>기본 지도</span>
+              </div>
+              <span class="summary-count">Google</span>
+            </summary>
+            <div class="section-body">
+              <div class="maptype-list">
+                <label class="maptype-row">
+                  <input type="radio" name="mapType" value="roadmap" checked />
+                  <span>기본</span>
+                </label>
+                <label class="maptype-row">
+                  <input type="radio" name="mapType" value="hybrid" />
+                  <span>하이브리드</span>
+                </label>
+              </div>
+              <label class="master-toggle">
+                <span>지도 랜드마크 표시</span>
+                <input type="checkbox" id="googlePoiToggle" checked />
+              </label>
+              <p class="section-note">지도 유형은 전환해서 비교할 수 있고, Street View는 지도 오른쪽 하단의 기본 컨트롤에서 바로 열 수 있습니다.</p>
+            </div>
+          </details>
+
           <details class="section" open id="venuesSection">
             <summary>
               <div class="summary-left">
                 <span class="summary-dot" style="background:var(--venue);"></span>
-                <span>비엔날레 장소</span>
+                <span>비엔날레 베뉴</span>
               </div>
               <span class="summary-count" id="venuesTotalCount"></span>
             </summary>
@@ -520,7 +654,8 @@
                 <input type="checkbox" id="venuesMasterToggle" checked />
               </label>
               <div id="venueNameList" class="name-list"></div>
-              <p class="section-note">비엔날레 장소는 별도 하위 유형 없이 하나의 강조 레이어로 표시합니다.</p>
+              <button class="route-toggle-button" id="venueRouteToggle" type="button">동선 표시</button>
+              <p class="section-note">도로망을 따라 각 비엔날레 베뉴를 연결한 동선을 빨간 선으로 표시합니다.</p>
             </div>
           </details>
 
@@ -563,22 +698,6 @@
             </div>
           </details>
 
-          <details class="section" open id="basemapSection">
-            <summary>
-              <div class="summary-left">
-                <span class="summary-dot" style="background:#3f4752;"></span>
-                <span>기본 지도</span>
-              </div>
-              <span class="summary-count">Google</span>
-            </summary>
-            <div class="section-body">
-              <label class="master-toggle">
-                <span>지도 랜드마크 표시</span>
-                <input type="checkbox" id="googlePoiToggle" checked />
-              </label>
-              <p class="section-note">Google 기본 지도에 포함된 POI 및 랜드마크 표시를 켜거나 끌 수 있습니다.</p>
-            </div>
-          </details>
         </div>
       </aside>
 
@@ -605,6 +724,17 @@
   <script>
     const mapData = window.__MAP_DATA__;
     const googleMapsApiKey = "AIzaSyC_C1CPudF3Ze6NTOHX9yYRB2BDW9KFVWU";
+    const venueRouteDataPromise = fetch("locations/venue-route.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to load venue route data: ${response.status}`);
+        }
+        return response.json();
+      })
+      .catch((error) => {
+        console.warn("Failed to load local venue route data.", error);
+        return { legs: [] };
+      });
 
     const focusBoundsLiteral = {
       north: 33.535,
@@ -659,11 +789,14 @@
       },
       popup: null,
       focusMode: false,
-      googlePoiVisible: true
+      googlePoiVisible: true,
+      mapTypeId: "roadmap",
+      venueRouteVisible: false
     };
 
     let map;
     let focusRectangle;
+    let venueRoutePolyline;
 
     function normalizeHeritageType(value) {
       return value || "기타";
@@ -751,7 +884,7 @@
     }
 
     function venueBody() {
-      return `<div class="popup-text">비엔날레 장소</div>`;
+      return `<div class="popup-text">비엔날레 베뉴</div>`;
     }
 
     function createMarker(shape, color, size, position, title) {
@@ -811,7 +944,7 @@
         const marker = createMarker("star", "#ffd60a", 38, position, item.name);
         setPopup(marker, buildPopupCard({
           title: item.name,
-          badges: [{ label: "비엔날레 장소" }],
+          badges: [{ label: "비엔날레 베뉴" }],
           body: venueBody()
         }));
         state.markers.venues.push({ marker, item });
@@ -838,6 +971,68 @@
         });
     }
 
+    function buildVenueRoute() {
+      if (!map || mapData.venues.length < 2 || !google.maps.Polyline) {
+        return;
+      }
+
+      venueRoutePolyline = new google.maps.Polyline({
+        geodesic: false,
+        strokeColor: "#d62828",
+        strokeOpacity: 0.95,
+        strokeWeight: 5,
+        map: null
+      });
+
+      venueRouteDataPromise.then((routeData) => {
+        const combinedPath = Array.isArray(routeData.legs)
+          ? routeData.legs.flatMap((leg, legIndex) => (
+              Array.isArray(leg.path)
+                ? leg.path.filter((point, pointIndex) => (
+                    Number.isFinite(point.lat) &&
+                    Number.isFinite(point.lng) &&
+                    !(legIndex > 0 && pointIndex === 0)
+                  ))
+                : []
+            ))
+          : [];
+
+        if (!combinedPath.length) {
+          console.warn("No local venue route data was available to draw.");
+          if (venueRoutePolyline) {
+            venueRoutePolyline.setMap(null);
+            venueRoutePolyline = null;
+          }
+          updateVenueRouteButton();
+          return;
+        }
+
+        venueRoutePolyline.setPath(combinedPath);
+        updateVenueRouteVisibility();
+      });
+    }
+
+    function updateVenueRouteVisibility() {
+      if (!venueRoutePolyline) {
+        updateVenueRouteButton();
+        return;
+      }
+
+      const shouldShowRoute = state.sections.venues && state.venueRouteVisible;
+      venueRoutePolyline.setMap(shouldShowRoute ? map : null);
+      updateVenueRouteButton();
+    }
+
+    function updateVenueRouteButton() {
+      const button = document.getElementById("venueRouteToggle");
+
+      if (!button) {
+        return;
+      }
+
+      button.classList.toggle("is-active", state.venueRouteVisible);
+    }
+
     function refreshMarkerVisibility() {
       state.markers.heritage.forEach(({ marker, type }) => {
         const visible = (
@@ -859,6 +1054,94 @@
         );
         marker.setMap(visible ? map : null);
       });
+      updateVenueRouteVisibility();
+      updateTopFilterButtons();
+    }
+
+    function updateTopFilterButtons() {
+      const activeSectionName = state.sections.venues && !state.sections.shrines && !state.sections.heritage
+        ? "venues"
+        : state.sections.shrines && !state.sections.venues && !state.sections.heritage
+          ? "shrines"
+          : state.sections.heritage && !state.sections.venues && !state.sections.shrines
+            ? "heritage"
+            : null;
+
+      const buttonMap = {
+        venues: document.getElementById("showVenuesOnlyButton"),
+        shrines: document.getElementById("showShrinesOnlyButton"),
+        heritage: document.getElementById("showHeritageOnlyButton")
+      };
+
+      Object.entries(buttonMap).forEach(([sectionName, button]) => {
+        if (!button) {
+          return;
+        }
+        button.classList.toggle("is-active", activeSectionName === sectionName);
+      });
+
+      const googlePoiButton = document.getElementById("toggleGooglePoiButton");
+      if (googlePoiButton) {
+        googlePoiButton.classList.toggle("is-active", state.googlePoiVisible);
+      }
+    }
+
+    function syncSectionMasterToggles() {
+      const heritageToggle = document.getElementById("heritageMasterToggle");
+      const venuesToggle = document.getElementById("venuesMasterToggle");
+      const shrinesToggle = document.getElementById("shrinesMasterToggle");
+
+      if (heritageToggle) {
+        heritageToggle.checked = state.sections.heritage;
+        heritageToggle.indeterminate = false;
+      }
+      if (venuesToggle) {
+        venuesToggle.checked = state.sections.venues;
+        venuesToggle.indeterminate = false;
+      }
+      if (shrinesToggle) {
+        shrinesToggle.checked = state.sections.shrines;
+        shrinesToggle.indeterminate = false;
+      }
+    }
+
+    function showOnlySection(sectionName) {
+      state.sections.heritage = sectionName === "heritage";
+      state.sections.venues = sectionName === "venues";
+      state.sections.shrines = sectionName === "shrines";
+      syncSectionMasterToggles();
+      refreshMarkerVisibility();
+    }
+
+    function setFocusMode(enabled) {
+      state.focusMode = enabled;
+
+      const button = document.getElementById("focusButton");
+      const infoCard = document.getElementById("focusInfoCard");
+
+      if (state.focusMode) {
+        if (infoCard) {
+          infoCard.style.display = "none";
+        }
+        if (focusRectangle) {
+          focusRectangle.setMap(map);
+        }
+        if (button) {
+          button.textContent = "전체";
+        }
+      } else {
+        if (infoCard) {
+          infoCard.style.display = "";
+        }
+        if (focusRectangle) {
+          focusRectangle.setMap(null);
+        }
+        if (button) {
+          button.textContent = "원도심 포커스";
+        }
+      }
+
+      refreshMarkerVisibility();
     }
 
     function createCheckRow({ id, label, count, color, checked, onChange }) {
@@ -889,7 +1172,7 @@
       document.getElementById("heritageTotalCount").textContent = `${mapData.heritage.length}건`;
       document.getElementById("venuesTotalCount").textContent = `${mapData.venues.length}곳`;
       document.getElementById("shrinesTotalCount").textContent = `${mapData.shrines.length}건`;
-      document.getElementById("header-counts").textContent = `문화유산 ${mapData.heritage.length} · 장소 ${mapData.venues.length} · 신당 ${mapData.shrines.length}`;
+      document.getElementById("header-counts").textContent = `문화유산 ${mapData.heritage.length} · 베뉴 ${mapData.venues.length} · 신당 ${mapData.shrines.length}`;
       document.getElementById("shrineNoCoordNote").textContent = `좌표 없음 ${shrineNoCoords}건은 지도에서 숨김 처리했습니다.`;
 
       const heritageList = document.getElementById("heritageTypeList");
@@ -949,10 +1232,19 @@
         button.className = "name-item";
         button.textContent = venue.name;
         button.addEventListener("click", () => {
-          state.focusMode = false;
-          refreshMarkerVisibility();
-          map.panTo({ lat: Number(venue.latitude), lng: Number(venue.longitude) });
+          const position = { lat: Number(venue.latitude), lng: Number(venue.longitude) };
+          const venueMarkerEntry = state.markers.venues.find(({ item }) => item.name === venue.name);
+
+          if (state.focusMode) {
+            setFocusMode(false);
+          }
+
+          map.panTo(position);
           map.setZoom(14);
+
+          if (venueMarkerEntry) {
+            google.maps.event.trigger(venueMarkerEntry.marker, "click");
+          }
         });
         venueNameList.appendChild(button);
       });
@@ -973,6 +1265,10 @@
       document.getElementById("venuesMasterToggle").addEventListener("change", (event) => {
         state.sections.venues = event.target.checked;
         refreshMarkerVisibility();
+      });
+      document.getElementById("venueRouteToggle").addEventListener("click", () => {
+        state.venueRouteVisible = !state.venueRouteVisible;
+        updateVenueRouteVisibility();
       });
       document.getElementById("shrinesMasterToggle").addEventListener("change", (event) => {
         state.sections.shrines = event.target.checked;
@@ -1011,42 +1307,51 @@
 
     function bindUi() {
       document.getElementById("focusButton").addEventListener("click", () => {
-        const button = document.getElementById("focusButton");
-        state.focusMode = !state.focusMode;
-        const infoCard = document.getElementById("focusInfoCard");
-
-        if (state.focusMode) {
-          if (infoCard) {
-            infoCard.style.display = "none";
-          }
-          if (focusRectangle) {
-            focusRectangle.setMap(map);
-          }
-          if (button) {
-            button.textContent = "전체";
-          }
-        } else {
-          if (infoCard) {
-            infoCard.style.display = "";
-          }
-          if (focusRectangle) {
-            focusRectangle.setMap(null);
-          }
-          if (button) {
-            button.textContent = "원도심 포커스";
-          }
-        }
-
-        refreshMarkerVisibility();
+        setFocusMode(!state.focusMode);
       });
 
       document.getElementById("sidebarToggle").addEventListener("click", () => {
         document.getElementById("sidebar").classList.toggle("open");
       });
 
+      document.getElementById("showVenuesOnlyButton").addEventListener("click", () => {
+        showOnlySection("venues");
+      });
+      document.getElementById("showShrinesOnlyButton").addEventListener("click", () => {
+        showOnlySection("shrines");
+      });
+      document.getElementById("showHeritageOnlyButton").addEventListener("click", () => {
+        showOnlySection("heritage");
+      });
+      document.getElementById("toggleGooglePoiButton").addEventListener("click", () => {
+        state.googlePoiVisible = !state.googlePoiVisible;
+
+        const googlePoiToggle = document.getElementById("googlePoiToggle");
+        if (googlePoiToggle) {
+          googlePoiToggle.checked = state.googlePoiVisible;
+        }
+
+        applyBaseMapStyle();
+        updateTopFilterButtons();
+      });
+
       document.getElementById("googlePoiToggle").addEventListener("change", (event) => {
         state.googlePoiVisible = event.target.checked;
         applyBaseMapStyle();
+        updateTopFilterButtons();
+      });
+
+      document.querySelectorAll('input[name="mapType"]').forEach((input) => {
+        input.addEventListener("change", (event) => {
+          if (!event.target.checked) {
+            return;
+          }
+
+          state.mapTypeId = event.target.value;
+          if (map) {
+            map.setMapTypeId(state.mapTypeId);
+          }
+        });
       });
 
     }
@@ -1092,6 +1397,7 @@
       map = new google.maps.Map(document.getElementById("map"), {
         center: focusCenterLiteral,
         zoom: 11,
+        mapTypeId: state.mapTypeId,
         minZoom: 8,
         maxZoom: 17,
         restriction: {
@@ -1099,7 +1405,7 @@
           strictBounds: false
         },
         mapTypeControl: false,
-        streetViewControl: false,
+        streetViewControl: true,
         fullscreenControl: false
       });
 
@@ -1116,6 +1422,7 @@
       createHeritageMarkers();
       createVenueMarkers();
       createShrineMarkers();
+      buildVenueRoute();
       renderSidebar();
       applyBaseMapStyle();
       refreshMarkerVisibility();
