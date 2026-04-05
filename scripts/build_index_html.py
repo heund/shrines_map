@@ -1149,7 +1149,7 @@ def main() -> int:
     }
 
     function venueBody() {
-      return `<div class="popup-text">ë¹„ì—”ë‚ ë ˆ ìž¥ì†Œ</div>`;
+      return `<div class="popup-text">비엔날레 장소</div>`;
     }
 
     function createMarker(shape, color, size, position, title, options = {}) {
