@@ -376,6 +376,183 @@
       background: rgba(255, 245, 196, 0.95);
     }
 
+    .sidebar-head a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .meeting-toolbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .meeting-swatch-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .meeting-swatch {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      border: 2px solid rgba(43, 32, 20, 0.18);
+      cursor: pointer;
+      padding: 0;
+      background: transparent;
+    }
+
+    .meeting-swatch.is-active {
+      border-color: #221b16;
+      box-shadow: 0 0 0 3px rgba(13, 107, 120, 0.14);
+    }
+
+    .meeting-secondary-button {
+      border: 1px solid rgba(43, 32, 20, 0.08);
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .meeting-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .meeting-item {
+      border: 1px solid rgba(43, 32, 20, 0.08);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.82);
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .meeting-item.is-selected {
+      border-color: rgba(13, 107, 120, 0.5);
+      box-shadow: inset 0 0 0 1px rgba(13, 107, 120, 0.16);
+    }
+
+    .meeting-item-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .meeting-visibility {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .meeting-visibility input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
+    .meeting-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .meeting-chip {
+      border: 1px solid rgba(43, 32, 20, 0.08);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--text);
+      padding: 7px 10px;
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .meeting-chip.is-active {
+      background: var(--accent);
+      border-color: rgba(13, 107, 120, 0.36);
+      color: white;
+    }
+
+    .meeting-chip.danger {
+      color: #8a1c1c;
+      background: rgba(214, 40, 40, 0.08);
+      border-color: rgba(214, 40, 40, 0.18);
+    }
+
+    .meeting-field {
+      display: grid;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .meeting-field textarea {
+      width: 100%;
+      min-height: 78px;
+      resize: vertical;
+      border: 1px solid rgba(43, 32, 20, 0.1);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--text);
+      font: inherit;
+      line-height: 1.5;
+      padding: 10px 12px;
+    }
+
+    .meeting-color {
+      width: 100%;
+      height: 42px;
+      border: 1px solid rgba(43, 32, 20, 0.1);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.96);
+      cursor: pointer;
+    }
+
+    .meeting-meta {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .meeting-empty {
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.6);
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .meeting-label {
+      transform: translate(-50%, -50%);
+      max-width: 180px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      background: rgba(251, 248, 240, 0.94);
+      border: 1px solid rgba(43, 32, 20, 0.14);
+      box-shadow: 0 10px 24px rgba(43, 32, 20, 0.18);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1.4;
+      text-align: center;
+      white-space: normal;
+    }
+
     details.meta-list {
       border: 1px dashed rgba(43, 32, 20, 0.12);
       border-radius: 12px;
@@ -426,8 +603,18 @@
       bottom: 16px;
       display: grid;
       gap: 10px;
-      width: min(320px, calc(100% - 32px));
+      width: min(250px, calc(100% - 32px));
       z-index: 5;
+    }
+
+    .map-floating-top {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: min(360px, calc(100% - 32px));
+      z-index: 6;
+      display: flex;
+      justify-content: flex-end;
     }
 
     .floating-card {
@@ -451,6 +638,70 @@
       line-height: 1.5;
     }
 
+    .floating-details {
+      overflow: hidden;
+      padding: 0;
+      width: 64px;
+      transition: width 0.18s ease;
+    }
+
+    .floating-details[open] {
+      width: min(360px, calc(100vw - 32px));
+    }
+
+    .floating-details > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .floating-details > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .meeting-summary-label,
+    .meeting-panel-count {
+      display: none;
+    }
+
+    .floating-details[open] .meeting-summary-label,
+    .floating-details[open] .meeting-panel-count {
+      display: inline;
+    }
+
+    .meeting-summary-icon {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: rgba(13, 107, 120, 0.12);
+      color: var(--accent);
+      font-size: 1.15rem;
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .floating-details-body {
+      display: grid;
+      gap: 10px;
+      padding: 0 15px 15px;
+      border-top: 1px solid rgba(43, 32, 20, 0.08);
+    }
+
+    .meeting-panel-count {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
     .focus-button {
       border: 0;
       border-radius: 14px;
@@ -458,7 +709,7 @@
       color: white;
       font: inherit;
       font-weight: 800;
-      padding: 13px 16px;
+      padding: 12px 14px;
       cursor: pointer;
       box-shadow: var(--shadow);
     }
@@ -850,11 +1101,36 @@
               </details>
             </div>
           </details>
+
         </div>
       </aside>
 
       <section class="map-card">
         <div id="map"></div>
+        <div class="map-floating-top">
+          <details class="floating-card floating-details" id="meetingFloatingPanel">
+            <summary>
+              <span class="meeting-summary-icon" aria-hidden="true">◎</span>
+              <span class="meeting-summary-label">회의 메모 레이어</span>
+              <span class="meeting-panel-count" id="meetingAnnotationCount">0개</span>
+            </summary>
+            <div class="floating-details-body">
+              <label class="master-toggle">
+                <span>레이어 표시</span>
+                <input type="checkbox" id="meetingLayerToggle" checked />
+              </label>
+              <button class="route-toggle-button" id="meetingEditToggle" type="button">원형 메모 편집 시작</button>
+              <div class="meeting-toolbar">
+                <button class="meeting-secondary-button" id="meetingAddToggle" type="button">◎ 새 원 추가</button>
+                <button class="meeting-secondary-button" id="meetingDrawToggle" type="button">✎ 선 그리기</button>
+                <button class="meeting-secondary-button" id="meetingDeselectButton" type="button">선택 해제</button>
+                <button class="meeting-secondary-button" id="meetingClearButton" type="button">전체 삭제</button>
+              </div>
+              <p class="section-note" id="meetingHelpText">편집 모드에서는 지도를 클릭해 원형 메모를 추가하고, 마우스 휠로 선택된 원의 크기를 조절할 수 있습니다. 메모는 이 브라우저에 자동 저장됩니다.</p>
+              <div class="meeting-list" id="meetingAnnotationList"></div>
+            </div>
+          </details>
+        </div>
         <div class="map-floating">
           <div class="floating-card" id="focusInfoCard">
             <strong>제주원도심 포커스 영역</strong>
@@ -903,6 +1179,17 @@
     };
 
     const focusCenterLiteral = { lat: 33.5100, lng: 126.5216 };
+    const meetingAnnotationStorageKey = "shrines-map-meeting-annotations-v1";
+    const meetingDefaultRadius = 180;
+    const meetingDefaultColor = "#0d6b78";
+    const meetingColorPresets = [
+      "#0d6b78",
+      "#cc6b2c",
+      "#d62828",
+      "#7b5c3d",
+      "#2a9d8f",
+      "#6f4ef2"
+    ];
 
     const heritagePalette = {
       "보물": "#ff7a18",
@@ -940,6 +1227,15 @@
         venues: [],
         shrines: []
       },
+      meeting: {
+        visible: true,
+        editMode: false,
+        placementMode: false,
+        drawingMode: false,
+        currentDrawingPath: [],
+        selectedId: null,
+        annotations: []
+      },
       popup: null,
       focusMode: false,
       googlePoiVisible: true,
@@ -950,6 +1246,9 @@
     let map;
     let focusRectangle;
     let venueRoutePolyline;
+    let meetingMapClickListener = null;
+    let meetingWheelHandler = null;
+    let meetingDraftPolyline = null;
 
     window.__closeMapPopup = function closeMapPopup() {
       if (state.popup) {
@@ -979,6 +1278,728 @@
         .replace(/'/g, "&#39;");
     }
 
+    function formatKstTimestamp(isoString) {
+      if (!isoString) {
+        return "";
+      }
+      const parsed = new Date(isoString);
+      if (Number.isNaN(parsed.getTime())) {
+        return "";
+      }
+      return new Intl.DateTimeFormat("ko-KR", {
+        timeZone: "Asia/Seoul",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      }).format(parsed);
+    }
+
+    function nowIsoString() {
+      return new Date().toISOString();
+    }
+
+    function createMeetingAnnotationId() {
+      return `meeting-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    }
+
+    function sanitizeMeetingAnnotation(item) {
+      const type = item?.type === "line" ? "line" : "circle";
+
+      if (type === "line") {
+        const path = Array.isArray(item?.path)
+          ? item.path
+              .map((point) => ({ lat: Number(point?.lat), lng: Number(point?.lng) }))
+              .filter((point) => Number.isFinite(point.lat) && Number.isFinite(point.lng))
+          : [];
+        if (path.length < 2) {
+          return null;
+        }
+        return {
+          type,
+          id: String(item.id || createMeetingAnnotationId()),
+          path,
+          color: String(item.color || meetingDefaultColor),
+          comment: String(item.comment || ""),
+          visible: item.visible !== false,
+          createdAt: item.createdAt || nowIsoString(),
+          updatedAt: item.updatedAt || item.createdAt || nowIsoString(),
+          polyline: null,
+          labelMarker: null
+        };
+      }
+
+      const lat = Number(item?.center?.lat);
+      const lng = Number(item?.center?.lng);
+      const radius = Number(item?.radius);
+      if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+        return null;
+      }
+      return {
+        type,
+        id: String(item.id || createMeetingAnnotationId()),
+        center: { lat, lng },
+        radius: Number.isFinite(radius) ? Math.min(3000, Math.max(30, radius)) : meetingDefaultRadius,
+        color: String(item.color || meetingDefaultColor),
+        comment: String(item.comment || ""),
+        visible: item.visible !== false,
+        createdAt: item.createdAt || nowIsoString(),
+        updatedAt: item.updatedAt || item.createdAt || nowIsoString(),
+        circle: null,
+        labelMarker: null
+      };
+    }
+
+    function loadMeetingAnnotations() {
+      try {
+        const raw = window.localStorage.getItem(meetingAnnotationStorageKey);
+        if (!raw) {
+          return [];
+        }
+        const parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed)) {
+          return [];
+        }
+        return parsed
+          .map((item) => sanitizeMeetingAnnotation(item))
+          .filter(Boolean);
+      } catch (error) {
+        console.warn("회의 메모 레이어를 불러오지 못했습니다.", error);
+        return [];
+      }
+    }
+
+    function saveMeetingAnnotations() {
+      try {
+        const serializable = state.meeting.annotations.map((annotation) => ({
+          type: annotation.type || "circle",
+          id: annotation.id,
+          path: annotation.path,
+          center: annotation.center,
+          radius: annotation.radius,
+          color: annotation.color,
+          comment: annotation.comment,
+          visible: annotation.visible,
+          createdAt: annotation.createdAt,
+          updatedAt: annotation.updatedAt
+        }));
+        window.localStorage.setItem(meetingAnnotationStorageKey, JSON.stringify(serializable));
+      } catch (error) {
+        console.warn("회의 메모 레이어를 저장하지 못했습니다.", error);
+      }
+    }
+
+    function getMeetingAnnotation(annotationId) {
+      return state.meeting.annotations.find((annotation) => annotation.id === annotationId) || null;
+    }
+
+    function formatMeetingRadius(radius) {
+      return `${Math.round(radius)}m`;
+    }
+
+    function getMeetingAnnotationLabel(annotation) {
+      return (annotation.comment || "메모 없음").trim().slice(0, 60);
+    }
+
+    function getMeetingLineLabelPosition(annotation) {
+      if (!Array.isArray(annotation.path) || !annotation.path.length) {
+        return null;
+      }
+      return annotation.path[Math.floor((annotation.path.length - 1) / 2)];
+    }
+
+    function touchMeetingAnnotation(annotation) {
+      annotation.updatedAt = nowIsoString();
+    }
+
+    function updateMeetingCount() {
+      const countNode = document.getElementById("meetingAnnotationCount");
+      if (countNode) {
+        countNode.textContent = `${state.meeting.annotations.length}개`;
+      }
+    }
+
+    function updateMeetingAnnotationStyle(annotation) {
+      const isSelected = state.meeting.selectedId === annotation.id;
+      const canInteract = state.meeting.editMode && !state.meeting.placementMode && !state.meeting.drawingMode;
+
+      if (annotation.type === "line" && annotation.polyline) {
+        annotation.polyline.setOptions({
+          strokeColor: annotation.color,
+          strokeOpacity: annotation.visible ? 0.95 : 0,
+          strokeWeight: isSelected ? 5 : 4,
+          clickable: canInteract,
+          zIndex: isSelected ? 300 : 220
+        });
+        annotation.polyline.setPath(annotation.path);
+      } else if (annotation.circle) {
+        annotation.circle.setOptions({
+          strokeColor: annotation.color,
+          strokeOpacity: annotation.visible ? 0.92 : 0,
+          strokeWeight: isSelected ? 3 : 2,
+          fillColor: annotation.color,
+          fillOpacity: annotation.visible ? 0.22 : 0,
+          clickable: canInteract,
+          draggable: canInteract,
+          zIndex: isSelected ? 300 : 220
+        });
+        annotation.circle.setCenter(annotation.center);
+        annotation.circle.setRadius(annotation.radius);
+      }
+
+      if (annotation.labelMarker) {
+        const labelPosition = annotation.type === "line"
+          ? getMeetingLineLabelPosition(annotation)
+          : annotation.center;
+        if (labelPosition) {
+          annotation.labelMarker.setPosition(labelPosition);
+        }
+        annotation.labelMarker.setLabel({
+          text: getMeetingAnnotationLabel(annotation),
+          className: "meeting-label"
+        });
+        annotation.labelMarker.setClickable(canInteract);
+        annotation.labelMarker.setZIndex(isSelected ? 301 : 221);
+      }
+    }
+
+    function refreshMeetingLayerVisibility() {
+      state.meeting.annotations.forEach((annotation) => {
+        updateMeetingAnnotationStyle(annotation);
+        const shouldShow = state.meeting.visible && annotation.visible;
+        if (annotation.circle) {
+          annotation.circle.setMap(shouldShow ? map : null);
+        }
+        if (annotation.polyline) {
+          annotation.polyline.setMap(shouldShow ? map : null);
+        }
+        if (annotation.labelMarker) {
+          annotation.labelMarker.setMap(shouldShow ? map : null);
+        }
+      });
+      if (meetingDraftPolyline) {
+        meetingDraftPolyline.setMap(state.meeting.editMode && state.meeting.drawingMode ? map : null);
+      }
+      updateMeetingCount();
+    }
+
+    function setMeetingSelection(annotationId) {
+      state.meeting.selectedId = annotationId;
+      if (annotationId) {
+        state.meeting.placementMode = false;
+        state.meeting.drawingMode = false;
+      }
+      state.meeting.annotations.forEach((annotation) => updateMeetingAnnotationStyle(annotation));
+      renderMeetingAnnotationList();
+      bindMeetingMapEvents();
+      updateMeetingUi();
+    }
+
+    function createMeetingCircle(annotation) {
+      annotation.circle = new google.maps.Circle({
+        center: annotation.center,
+        radius: annotation.radius,
+        strokeColor: annotation.color,
+        strokeOpacity: 0.92,
+        strokeWeight: 2,
+        fillColor: annotation.color,
+        fillOpacity: 0.22,
+        clickable: true,
+        draggable: state.meeting.editMode,
+        map: null
+      });
+
+      annotation.circle.addListener("click", (event) => {
+        if (event && event.domEvent && typeof event.domEvent.stopPropagation === "function") {
+          event.domEvent.stopPropagation();
+        }
+        setMeetingSelection(annotation.id);
+      });
+
+      annotation.circle.addListener("dragstart", () => {
+        setMeetingSelection(annotation.id);
+      });
+
+      annotation.circle.addListener("drag", () => {
+        const center = annotation.circle.getCenter();
+        if (!center) {
+          return;
+        }
+        annotation.center = { lat: center.lat(), lng: center.lng() };
+        updateMeetingAnnotationStyle(annotation);
+      });
+
+      annotation.circle.addListener("dragend", () => {
+        const center = annotation.circle.getCenter();
+        if (!center) {
+          return;
+        }
+        annotation.center = { lat: center.lat(), lng: center.lng() };
+        touchMeetingAnnotation(annotation);
+        updateMeetingAnnotationStyle(annotation);
+        saveMeetingAnnotations();
+        renderMeetingAnnotationList();
+        updateMeetingUi();
+      });
+
+      annotation.labelMarker = new google.maps.Marker({
+        position: annotation.center,
+        map: null,
+        clickable: true,
+        zIndex: 221,
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 0,
+          fillOpacity: 0,
+          strokeOpacity: 0
+        },
+        label: {
+          text: (annotation.comment || "메모 없음").trim().slice(0, 60),
+          className: "meeting-label"
+        }
+      });
+
+      annotation.labelMarker.addListener("click", () => {
+        setMeetingSelection(annotation.id);
+      });
+
+      updateMeetingAnnotationStyle(annotation);
+    }
+
+    function createMeetingLine(annotation) {
+      annotation.polyline = new google.maps.Polyline({
+        path: annotation.path,
+        geodesic: false,
+        strokeColor: annotation.color,
+        strokeOpacity: 0.95,
+        strokeWeight: 4,
+        clickable: true,
+        map: null
+      });
+
+      annotation.polyline.addListener("click", () => {
+        setMeetingSelection(annotation.id);
+      });
+
+      annotation.labelMarker = new google.maps.Marker({
+        position: getMeetingLineLabelPosition(annotation),
+        map: null,
+        clickable: true,
+        zIndex: 221,
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 0,
+          fillOpacity: 0,
+          strokeOpacity: 0
+        },
+        label: {
+          text: getMeetingAnnotationLabel(annotation),
+          className: "meeting-label"
+        }
+      });
+
+      annotation.labelMarker.addListener("click", () => {
+        setMeetingSelection(annotation.id);
+      });
+
+      updateMeetingAnnotationStyle(annotation);
+    }
+
+    function renderMeetingAnnotationList() {
+      const list = document.getElementById("meetingAnnotationList");
+      if (!list) {
+        return;
+      }
+
+      list.innerHTML = "";
+
+      if (!state.meeting.annotations.length) {
+        const empty = document.createElement("div");
+        empty.className = "meeting-empty";
+        empty.textContent = "저장된 회의 메모가 없습니다. 편집 모드에서 원형 메모나 선 메모를 추가해 주세요.";
+        list.appendChild(empty);
+        updateMeetingCount();
+        return;
+      }
+
+      state.meeting.annotations.forEach((annotation, index) => {
+        const item = document.createElement("div");
+        item.className = `meeting-item${state.meeting.selectedId === annotation.id ? " is-selected" : ""}`;
+
+        const head = document.createElement("div");
+        head.className = "meeting-item-head";
+
+        const visibility = document.createElement("label");
+        visibility.className = "meeting-visibility";
+        const visibleInput = document.createElement("input");
+        visibleInput.type = "checkbox";
+        visibleInput.checked = annotation.visible;
+        visibleInput.addEventListener("change", (event) => {
+          annotation.visible = event.target.checked;
+          touchMeetingAnnotation(annotation);
+          saveMeetingAnnotations();
+          refreshMeetingLayerVisibility();
+        });
+        const visibilityText = document.createElement("span");
+        visibilityText.textContent = `${annotation.type === "line" ? "선 메모" : "원 메모"} ${index + 1} 표시`;
+        visibility.appendChild(visibleInput);
+        visibility.appendChild(visibilityText);
+
+        const actions = document.createElement("div");
+        actions.className = "meeting-actions";
+
+        const selectButton = document.createElement("button");
+        selectButton.type = "button";
+        selectButton.className = `meeting-chip${state.meeting.selectedId === annotation.id ? " is-active" : ""}`;
+        selectButton.textContent = "선택";
+        selectButton.addEventListener("click", () => {
+          setMeetingSelection(annotation.id);
+        });
+
+        const deleteButton = document.createElement("button");
+        deleteButton.type = "button";
+        deleteButton.className = "meeting-chip danger";
+        deleteButton.textContent = "삭제";
+        deleteButton.addEventListener("click", () => {
+          if (annotation.circle) {
+            annotation.circle.setMap(null);
+          }
+          if (annotation.polyline) {
+            annotation.polyline.setMap(null);
+          }
+          if (annotation.labelMarker) {
+            annotation.labelMarker.setMap(null);
+          }
+          state.meeting.annotations = state.meeting.annotations.filter((itemToKeep) => itemToKeep.id !== annotation.id);
+          if (state.meeting.selectedId === annotation.id) {
+            state.meeting.selectedId = null;
+          }
+          saveMeetingAnnotations();
+          refreshMeetingLayerVisibility();
+          renderMeetingAnnotationList();
+          updateMeetingUi();
+        });
+
+        actions.appendChild(selectButton);
+        actions.appendChild(deleteButton);
+        head.appendChild(visibility);
+        head.appendChild(actions);
+
+        const colorField = document.createElement("div");
+        colorField.className = "meeting-field";
+        colorField.textContent = "색상";
+
+        const swatchRow = document.createElement("div");
+        swatchRow.className = "meeting-swatch-row";
+        meetingColorPresets.forEach((presetColor) => {
+          const swatchButton = document.createElement("button");
+          swatchButton.type = "button";
+          swatchButton.className = `meeting-swatch${annotation.color.toLowerCase() === presetColor.toLowerCase() ? " is-active" : ""}`;
+          swatchButton.style.background = presetColor;
+          swatchButton.setAttribute("aria-label", `색상 ${presetColor}`);
+          swatchButton.addEventListener("click", () => {
+            annotation.color = presetColor;
+            touchMeetingAnnotation(annotation);
+            updateMeetingAnnotationStyle(annotation);
+            saveMeetingAnnotations();
+            renderMeetingAnnotationList();
+          });
+          swatchRow.appendChild(swatchButton);
+        });
+
+        const advancedColorWrap = document.createElement("details");
+        advancedColorWrap.className = "meta-list";
+        const advancedSummary = document.createElement("summary");
+        advancedSummary.textContent = "직접 색상 선택";
+        advancedColorWrap.appendChild(advancedSummary);
+
+        const colorInput = document.createElement("input");
+        colorInput.className = "meeting-color";
+        colorInput.type = "color";
+        colorInput.value = annotation.color;
+        colorInput.addEventListener("input", (event) => {
+          annotation.color = event.target.value;
+          touchMeetingAnnotation(annotation);
+          updateMeetingAnnotationStyle(annotation);
+          saveMeetingAnnotations();
+          renderMeetingAnnotationList();
+        });
+        advancedColorWrap.appendChild(colorInput);
+
+        colorField.appendChild(swatchRow);
+        colorField.appendChild(advancedColorWrap);
+
+        const commentField = document.createElement("label");
+        commentField.className = "meeting-field";
+        commentField.textContent = "메모";
+        const commentInput = document.createElement("textarea");
+        commentInput.placeholder = "회의 중 메모를 입력해 주세요.";
+        commentInput.value = annotation.comment;
+        commentInput.addEventListener("input", (event) => {
+          annotation.comment = event.target.value;
+          touchMeetingAnnotation(annotation);
+          updateMeetingAnnotationStyle(annotation);
+          saveMeetingAnnotations();
+          meta.textContent = annotation.type === "line"
+            ? `선 포인트 ${annotation.path.length}개 · 수정 ${formatKstTimestamp(annotation.updatedAt)}`
+            : `반경 ${formatMeetingRadius(annotation.radius)} · 수정 ${formatKstTimestamp(annotation.updatedAt)}`;
+        });
+        commentField.appendChild(commentInput);
+
+        const meta = document.createElement("div");
+        meta.className = "meeting-meta";
+        meta.textContent = annotation.type === "line"
+          ? `선 포인트 ${annotation.path.length}개 · 수정 ${formatKstTimestamp(annotation.updatedAt)}`
+          : `반경 ${formatMeetingRadius(annotation.radius)} · 수정 ${formatKstTimestamp(annotation.updatedAt)}`;
+
+        item.appendChild(head);
+        item.appendChild(colorField);
+        item.appendChild(commentField);
+        item.appendChild(meta);
+        list.appendChild(item);
+      });
+
+      updateMeetingCount();
+    }
+
+    function updateMeetingUi() {
+      const editButton = document.getElementById("meetingEditToggle");
+      const addButton = document.getElementById("meetingAddToggle");
+      const drawButton = document.getElementById("meetingDrawToggle");
+      const helpText = document.getElementById("meetingHelpText");
+      const layerToggle = document.getElementById("meetingLayerToggle");
+
+      if (layerToggle) {
+        layerToggle.checked = state.meeting.visible;
+      }
+
+      if (editButton) {
+        editButton.classList.toggle("is-active", state.meeting.editMode);
+        editButton.textContent = state.meeting.editMode ? "원형 메모 편집 종료" : "원형 메모 편집 시작";
+      }
+
+      if (addButton) {
+        addButton.classList.toggle("is-active", state.meeting.editMode && state.meeting.placementMode);
+      }
+
+      if (drawButton) {
+        drawButton.classList.toggle("is-active", state.meeting.editMode && state.meeting.drawingMode);
+        drawButton.textContent = state.meeting.editMode && state.meeting.drawingMode
+          ? `✎ 선 저장 (${state.meeting.currentDrawingPath.length}점)`
+          : "✎ 선 그리기";
+      }
+
+      if (helpText) {
+        if (state.meeting.editMode) {
+          const selected = getMeetingAnnotation(state.meeting.selectedId);
+          if (state.meeting.placementMode) {
+            helpText.textContent = "새 원 추가 모드입니다. 지도를 클릭할 때마다 새로운 원형 메모가 추가됩니다.";
+          } else if (state.meeting.drawingMode) {
+            helpText.textContent = state.meeting.currentDrawingPath.length
+              ? "선 그리기 모드입니다. 지도 클릭으로 점을 이어 그리고, 버튼을 다시 눌러 선 메모를 저장해 주세요."
+              : "선 그리기 모드입니다. 지도를 클릭해 첫 점부터 차례로 선을 그려 주세요.";
+          } else {
+            helpText.textContent = selected
+              ? selected.type === "line"
+                ? `편집 모드입니다. 선택된 선 메모를 수정 중입니다. 현재 포인트 수는 ${selected.path.length}개입니다.`
+                : `편집 모드입니다. 선택된 원은 드래그로 위치를 옮기고 마우스 휠로 크기를 조절할 수 있습니다. 현재 반경은 ${formatMeetingRadius(selected.radius)}입니다.`
+              : "편집 모드입니다. 새 원 추가 또는 선 그리기 버튼으로 메모를 만들고, 기존 메모를 선택해 수정할 수 있습니다.";
+          }
+        } else {
+          helpText.textContent = "편집 모드에서는 원형 메모와 선 메모를 만들 수 있습니다. 메모는 이 브라우저에 자동 저장됩니다.";
+        }
+      }
+    }
+
+    function setMapInteractionLocked(isLocked) {
+      if (!map) {
+        return;
+      }
+      map.setOptions({
+        draggable: !isLocked,
+        scrollwheel: !isLocked,
+        disableDoubleClickZoom: isLocked,
+        keyboardShortcuts: !isLocked,
+        clickableIcons: !isLocked,
+        gestureHandling: isLocked ? "none" : "auto"
+      });
+    }
+
+    function addMeetingCircleAnnotation(latLng) {
+      const timestamp = nowIsoString();
+      const annotation = {
+        type: "circle",
+        id: createMeetingAnnotationId(),
+        center: { lat: latLng.lat(), lng: latLng.lng() },
+        radius: meetingDefaultRadius,
+        color: meetingDefaultColor,
+        comment: "",
+        visible: true,
+        createdAt: timestamp,
+        updatedAt: timestamp,
+        circle: null
+      };
+      createMeetingCircle(annotation);
+      state.meeting.annotations.unshift(annotation);
+      saveMeetingAnnotations();
+      refreshMeetingLayerVisibility();
+      setMeetingSelection(annotation.id);
+    }
+
+    function ensureMeetingDraftPolyline() {
+      if (meetingDraftPolyline || !map || !google.maps.Polyline) {
+        return;
+      }
+      meetingDraftPolyline = new google.maps.Polyline({
+        geodesic: false,
+        strokeColor: meetingDefaultColor,
+        strokeOpacity: 0.85,
+        strokeWeight: 4,
+        clickable: false,
+        map: null
+      });
+    }
+
+    function updateMeetingDraftPolyline() {
+      ensureMeetingDraftPolyline();
+      if (!meetingDraftPolyline) {
+        return;
+      }
+      meetingDraftPolyline.setPath(state.meeting.currentDrawingPath);
+      meetingDraftPolyline.setMap(state.meeting.editMode && state.meeting.drawingMode ? map : null);
+    }
+
+    function resetMeetingDraftLine() {
+      state.meeting.currentDrawingPath = [];
+      if (meetingDraftPolyline) {
+        meetingDraftPolyline.setPath([]);
+        meetingDraftPolyline.setMap(null);
+      }
+    }
+
+    function appendMeetingLinePoint(latLng) {
+      state.meeting.currentDrawingPath.push({ lat: latLng.lat(), lng: latLng.lng() });
+      updateMeetingDraftPolyline();
+      updateMeetingUi();
+    }
+
+    function finishMeetingLineDrawing() {
+      if (state.meeting.currentDrawingPath.length < 2) {
+        resetMeetingDraftLine();
+        state.meeting.drawingMode = false;
+        bindMeetingMapEvents();
+        updateMeetingUi();
+        return;
+      }
+
+      const timestamp = nowIsoString();
+      const annotation = {
+        type: "line",
+        id: createMeetingAnnotationId(),
+        path: state.meeting.currentDrawingPath.map((point) => ({ lat: point.lat, lng: point.lng })),
+        color: meetingDefaultColor,
+        comment: "",
+        visible: true,
+        createdAt: timestamp,
+        updatedAt: timestamp,
+        polyline: null,
+        labelMarker: null
+      };
+      createMeetingLine(annotation);
+      state.meeting.annotations.unshift(annotation);
+      resetMeetingDraftLine();
+      state.meeting.drawingMode = false;
+      saveMeetingAnnotations();
+      refreshMeetingLayerVisibility();
+      setMeetingSelection(annotation.id);
+    }
+
+    function bindMeetingMapEvents() {
+      if (!map) {
+        return;
+      }
+
+      if (meetingMapClickListener) {
+        google.maps.event.removeListener(meetingMapClickListener);
+        meetingMapClickListener = null;
+      }
+
+      if (meetingWheelHandler) {
+        document.getElementById("map").removeEventListener("wheel", meetingWheelHandler);
+        meetingWheelHandler = null;
+      }
+
+      if (!state.meeting.editMode) {
+        return;
+      }
+
+      if (state.meeting.placementMode) {
+        meetingMapClickListener = map.addListener("click", (event) => {
+          if (!event.latLng) {
+            return;
+          }
+          addMeetingCircleAnnotation(event.latLng);
+        });
+      } else if (state.meeting.drawingMode) {
+        meetingMapClickListener = map.addListener("click", (event) => {
+          if (!event.latLng) {
+            return;
+          }
+          appendMeetingLinePoint(event.latLng);
+        });
+      }
+
+      meetingWheelHandler = (event) => {
+        if (!state.meeting.editMode) {
+          return;
+        }
+        const selected = getMeetingAnnotation(state.meeting.selectedId);
+        if (!selected || selected.type !== "circle" || state.meeting.placementMode || state.meeting.drawingMode) {
+          return;
+        }
+        event.preventDefault();
+        selected.radius = Math.min(3000, Math.max(30, selected.radius + (event.deltaY < 0 ? 20 : -20)));
+        touchMeetingAnnotation(selected);
+        updateMeetingAnnotationStyle(selected);
+        saveMeetingAnnotations();
+        renderMeetingAnnotationList();
+        updateMeetingUi();
+      };
+      document.getElementById("map").addEventListener("wheel", meetingWheelHandler, { passive: false });
+    }
+
+    function toggleMeetingEditMode(forceValue) {
+      state.meeting.editMode = typeof forceValue === "boolean" ? forceValue : !state.meeting.editMode;
+      if (state.meeting.editMode && state.popup) {
+        state.popup.close();
+      }
+      if (!state.meeting.editMode) {
+        state.meeting.placementMode = false;
+        state.meeting.drawingMode = false;
+        resetMeetingDraftLine();
+      }
+      state.meeting.annotations.forEach((annotation) => updateMeetingAnnotationStyle(annotation));
+      setMapInteractionLocked(state.meeting.editMode);
+      bindMeetingMapEvents();
+      updateMeetingUi();
+    }
+
+    function initializeMeetingAnnotations() {
+      state.meeting.annotations = loadMeetingAnnotations();
+      state.meeting.annotations.forEach((annotation) => {
+        if (annotation.type === "line") {
+          createMeetingLine(annotation);
+        } else {
+          createMeetingCircle(annotation);
+        }
+      });
+      refreshMeetingLayerVisibility();
+      renderMeetingAnnotationList();
+      updateMeetingUi();
+    }
+
     function createSvgMarker(shape, color, size, options = {}) {
       const isClosed = Boolean(options.isClosed);
       let svg = "";
@@ -999,6 +2020,9 @@
 
     function setPopup(marker, html) {
       marker.addListener("click", () => {
+        if (state.meeting.editMode) {
+          return;
+        }
         if (state.popup) {
           state.popup.close();
         }
@@ -1254,6 +2278,7 @@
         marker.setMap(visible ? map : null);
       });
       updateVenueRouteVisibility();
+      refreshMeetingLayerVisibility();
       updateTopFilterButtons();
     }
 
@@ -1584,6 +2609,93 @@
         });
       });
 
+      const meetingLayerToggle = document.getElementById("meetingLayerToggle");
+      if (meetingLayerToggle) {
+        meetingLayerToggle.addEventListener("change", (event) => {
+          state.meeting.visible = event.target.checked;
+          refreshMeetingLayerVisibility();
+          updateMeetingUi();
+        });
+      }
+
+      const meetingEditToggle = document.getElementById("meetingEditToggle");
+      if (meetingEditToggle) {
+        meetingEditToggle.addEventListener("click", () => {
+          toggleMeetingEditMode();
+        });
+      }
+
+      const meetingAddToggle = document.getElementById("meetingAddToggle");
+      if (meetingAddToggle) {
+        meetingAddToggle.addEventListener("click", () => {
+          if (!state.meeting.editMode) {
+            toggleMeetingEditMode(true);
+          }
+          state.meeting.placementMode = !state.meeting.placementMode;
+          state.meeting.drawingMode = false;
+          resetMeetingDraftLine();
+          if (state.meeting.placementMode) {
+            state.meeting.selectedId = null;
+          }
+          state.meeting.annotations.forEach((annotation) => updateMeetingAnnotationStyle(annotation));
+          bindMeetingMapEvents();
+          renderMeetingAnnotationList();
+          updateMeetingUi();
+        });
+      }
+
+      const meetingDrawToggle = document.getElementById("meetingDrawToggle");
+      if (meetingDrawToggle) {
+        meetingDrawToggle.addEventListener("click", () => {
+          if (!state.meeting.editMode) {
+            toggleMeetingEditMode(true);
+          }
+          if (state.meeting.drawingMode) {
+            finishMeetingLineDrawing();
+            return;
+          }
+          state.meeting.drawingMode = true;
+          state.meeting.placementMode = false;
+          state.meeting.selectedId = null;
+          resetMeetingDraftLine();
+          state.meeting.annotations.forEach((annotation) => updateMeetingAnnotationStyle(annotation));
+          bindMeetingMapEvents();
+          renderMeetingAnnotationList();
+          updateMeetingUi();
+        });
+      }
+
+      const meetingDeselectButton = document.getElementById("meetingDeselectButton");
+      if (meetingDeselectButton) {
+        meetingDeselectButton.addEventListener("click", () => {
+          setMeetingSelection(null);
+        });
+      }
+
+      const meetingClearButton = document.getElementById("meetingClearButton");
+      if (meetingClearButton) {
+        meetingClearButton.addEventListener("click", () => {
+          state.meeting.annotations.forEach((annotation) => {
+            if (annotation.circle) {
+              annotation.circle.setMap(null);
+            }
+            if (annotation.polyline) {
+              annotation.polyline.setMap(null);
+            }
+            if (annotation.labelMarker) {
+              annotation.labelMarker.setMap(null);
+            }
+          });
+          state.meeting.annotations = [];
+          state.meeting.selectedId = null;
+          resetMeetingDraftLine();
+          saveMeetingAnnotations();
+          refreshMeetingLayerVisibility();
+          renderMeetingAnnotationList();
+          updateMeetingUi();
+        });
+      }
+
     }
 
     function applyBaseMapStyle() {
@@ -1654,6 +2766,7 @@
       createShrineMarkers();
       buildVenueRoute();
       renderSidebar();
+      initializeMeetingAnnotations();
       applyBaseMapStyle();
       refreshMarkerVisibility();
       bindUi();
