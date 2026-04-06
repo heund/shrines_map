@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jeju Biennale Map Login</title>
+  <title>제주비엔날레 지도 로그인</title>
   <style>
     :root {
       --bg: #f0e5d2;
@@ -135,18 +135,18 @@
 </head>
 <body>
   <main class="login-shell">
-    <span class="eyebrow">Protected Access</span>
-    <h1>Jeju Biennale Map</h1>
-    <p>Sign in with the shared password to open the private deployment.</p>
+    <span class="eyebrow">보호된 접근</span>
+    <h1>제주비엔날레 지도</h1>
+    <p>비공개 배포 페이지에 접속하려면 공용 비밀번호를 입력해 주세요.</p>
 
-    <div class="error" id="errorMessage">Password was incorrect. Please try again.</div>
+    <div class="error" id="errorMessage">비밀번호가 올바르지 않습니다. 다시 입력해 주세요.</div>
 
     <form method="post" action="/login">
       <label for="password">
-        Password
+        비밀번호
         <input id="password" name="password" type="password" autocomplete="current-password" required />
       </label>
-      <button type="submit">Open Map</button>
+      <button type="submit">지도 열기</button>
     </form>
   </main>
 
