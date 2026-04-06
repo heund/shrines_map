@@ -4,3 +4,6 @@ __pycache__/
 node_modules/
 npm-debug.log*
 .vercel/
+execution_report/
+documentation/
+*.md
