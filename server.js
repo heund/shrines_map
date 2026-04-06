@@ -20,6 +20,7 @@ const MAP_PASSWORD = process.env.MAP_LOGIN_PASSWORD;
 const SESSION_SECRET = process.env.SESSION_SECRET;
 const LOGIN_PATH = path.join(__dirname, "public", "login.html");
 const VENUE_ROUTE_PATH = path.join(__dirname, "locations", "venue-route.json");
+const SHRINE_IMAGES_PATH = path.join(__dirname, "shrine", "images");
 
 if (!GOOGLE_MAPS_API_KEY) {
   throw new Error("Missing required environment variable: GOOGLE_MAPS_API_KEY");
@@ -100,6 +101,21 @@ function handleVenueRoute(_req, res) {
   return res.sendFile(VENUE_ROUTE_PATH);
 }
 
+function handleShrineImage(req, res) {
+  setNoStore(res);
+
+  const imageName = String(req.params.imageName || "");
+  if (!/^[A-Za-z0-9_-]+\.(png|jpg|jpeg|webp)$/i.test(imageName)) {
+    return res.status(404).send("Not found");
+  }
+
+  return res.sendFile(imageName, { root: SHRINE_IMAGES_PATH }, (error) => {
+    if (error && !res.headersSent) {
+      res.status(error.statusCode || 404).send("Not found");
+    }
+  });
+}
+
 app.get("/health", handleHealth);
 
 app.get("/favicon.ico", (_req, res) => {
@@ -116,6 +132,7 @@ app.get("/", requireAuth, handleMap);
 
 app.get("/index.html", requireAuth, handleMap);
 app.get("/locations/venue-route.json", requireAuth, handleVenueRoute);
+app.get("/shrine/images/:imageName", requireAuth, handleShrineImage);
 
 app.listen(PORT, () => {
   console.log(`Shrines map server listening on port ${PORT}`);
